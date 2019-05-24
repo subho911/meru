@@ -1,15 +1,5 @@
-FROM openjdk:8
-
-MAINTAINER Shwethashree Venkatesh <shwethashreeec@gmail.com>
-
-VOLUME /tmp
-
+FROM openjdk:8-jre-slim
+COPY product-service/target/product-service-0.0.1-SNAPSHOT.jar /usr/src/meru/
+WORKDIR /usr/src/meru
 EXPOSE 8085
-
-ARG JAR_FILE=target/product-service-0.0.1-SNAPSHOT.war
-
-ADD ${JAR_FILE} product-service.war
-
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "product-service.war"]
-
-
+CMD ["java", "-jar", "product-service-0.0.1-SNAPSHOT.jar"]

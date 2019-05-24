@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: view-service
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/devops
+#    username: root
+#    password: adminadmin
+#    name: devops
+
+server:
+  port: 8090
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8086/eureka
+  instance:
+    hostname: localhost
+  main:
+    allow-bean-definition-overriding: true
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream, info, health
