@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.meru.promotion.dao.PromotionRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 109.003 s - in com.meru.promotion.dao.PromotionRepositoryTest

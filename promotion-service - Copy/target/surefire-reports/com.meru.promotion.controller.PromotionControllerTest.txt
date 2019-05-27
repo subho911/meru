@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.meru.promotion.controller.PromotionControllerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.771 s - in com.meru.promotion.controller.PromotionControllerTest

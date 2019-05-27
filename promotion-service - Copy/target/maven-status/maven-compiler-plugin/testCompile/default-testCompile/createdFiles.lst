@@ -1,0 +1,8 @@
+com\meru\promotion\service\PromotionServiceTest$PromotionServiceImplTestContextConfiguration.class
+com\meru\promotion\dao\PromotionRepositoryTest.class
+com\meru\promotion\service\PromotionServiceTest.class
+com\meru\promotion\util\UtilTests.class
+com\meru\promotion\service\PromotionServiceTest1.class
+com\meru\promotion\controller\PromotionControllerTest.class
+com\meru\promotion\controller\promotionControllerTest1.class
+com\meru\promotion\PromotionServiceApplicationTests.class

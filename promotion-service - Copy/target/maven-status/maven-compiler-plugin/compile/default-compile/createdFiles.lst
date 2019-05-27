@@ -1,0 +1,8 @@
+com\meru\promotion\dao\PromotionRepository.class
+com\meru\promotion\entity\converter\LocalDateConverter.class
+com\meru\promotion\service\PromotionService.class
+com\meru\promotion\service\PromotionServiceImpl.class
+com\meru\promotion\PromotionServiceApplication.class
+com\meru\promotion\util\PromoUtils.class
+com\meru\promotion\entity\Promotion.class
+com\meru\promotion\controller\PromotionController.class
