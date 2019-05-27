@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: SU272344
+Build-Jdk: 11.0.1
+Implementation-Title: PromotionService
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.meru.promotion
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/PromotionService
+Created-By: Maven Integration for Eclipse
+

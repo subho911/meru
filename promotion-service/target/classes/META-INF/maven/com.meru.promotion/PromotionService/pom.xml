@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.meru.promotion</groupId>
-	<artifactId>promotion-service</artifactId>
+	<artifactId>PromotionService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>promotion-service</name>
+	<name>PromotionService</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
