@@ -23,7 +23,7 @@ public class PriceClientController {
 	RestTemplate restTemplate;
 	
 	@RequestMapping("/client/ribbon/price")
-	public Price hi(@PathVariable String id) {
+	public Price getAllPrice() {
 		Price price = this.restTemplate.getForObject("http://server/price", Price.class);
 		return price;
 	}
