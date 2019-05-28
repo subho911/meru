@@ -1,5 +1,6 @@
 package com.meru.clientservice.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +40,18 @@ public class PriceClientController {
 	}
 
 	
-	public String fallback_getAllPrice() {
-		return "Service unavilable. Hello from Hystrix fallback method";
+	public List<Price> fallback_getAllPrice() {
+		Price price = new Price();
+		price.setDiscountPercentage(0);
+		price.setId(1);
+		price.setPriceAfterDiscount(0);
+		price.setPriceBeforeDiscount(0);
+		price.setProductId(1);
+		price.setRemarks("Downstream service unavailable. Hello from Hystrix");
+		
+		ArrayList<Price> arrayPrice = new ArrayList<Price>();
+		arrayPrice.add(price);
+		return arrayPrice;
+		
 	}
 }
