@@ -1,4 +1,4 @@
-package com.meru.clientservice;
+package com.meru.clientservice.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -8,8 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import com.meru.clientservice.entity.Price;
+
 @RestController
-public class ClientServiceController {
+public class PriceClientController {
 	
 	@LoadBalanced
 	@Bean
@@ -20,7 +22,7 @@ public class ClientServiceController {
 	@Autowired
 	RestTemplate restTemplate;
 	
-	@RequestMapping("/client/price")
+	@RequestMapping("/client/ribbon/price")
 	public Price hi(@PathVariable String id) {
 		Price price = this.restTemplate.getForObject("http://server/price", Price.class);
 		return price;

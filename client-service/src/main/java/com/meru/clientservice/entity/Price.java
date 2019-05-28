@@ -1,4 +1,4 @@
-package com.meru.clientservice;
+package com.meru.clientservice.entity;
 
 import java.io.Serializable;
 
