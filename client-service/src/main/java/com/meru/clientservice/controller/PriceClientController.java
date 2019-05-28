@@ -24,7 +24,7 @@ public class PriceClientController {
 	
 	@RequestMapping("/client/ribbon/price")
 	public Price getAllPrice() {
-		Price price = this.restTemplate.getForObject("http://server/price", Price.class);
+		Price price = this.restTemplate.getForObject("http://price-service/price", Price.class);
 		return price;
 	}
 
