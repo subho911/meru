@@ -1,4 +1,5 @@
-FROM openjdk:8
-ADD target/MeruClient-0.0.1-SNAPSHOT.jar meruclient.jar 
-ENTRYPOINT ["java", "-jar", "/meruclient.jar"] 
-
+FROM openjdk:8-jre-slim
+COPY target/promotion-client-service-0.0.1-SNAPSHOT.jar /usr/src/meru/
+WORKDIR /usr/src/meru
+EXPOSE 8090
+CMD ["java", "-jar", "promotion-client-service-0.0.1-SNAPSHOT.jar"]

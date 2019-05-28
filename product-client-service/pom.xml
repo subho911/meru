@@ -11,8 +11,8 @@
 	<groupId>com.meru</groupId>
 	<artifactId>product-client-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
-	<name>meru-client</name>
+	<packaging>jar</packaging>
+	<name>product-client-service</name>
 	<description>Meru Micro services Case Study</description>
 
 	<properties>

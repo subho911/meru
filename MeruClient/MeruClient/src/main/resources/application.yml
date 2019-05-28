@@ -1,6 +1,6 @@
 spring:
   application:
-    name: view-service
+    name: promotion-client-service
 #  datasource:
 #    driver-class-name: com.mysql.jdbc.Driver
 #    url: jdbc:mysql://localhost:3306/devops
@@ -9,15 +9,15 @@ spring:
 #    name: devops
 
 server:
-  port: 8090
+  port: 8093
 eureka:
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:8086/eureka
+      defaultZone: http://172.17.0.1:8081/eureka
   instance:
-    hostname: localhost
+    hostname: 172.17.0.1
   main:
     allow-bean-definition-overriding: true
 
